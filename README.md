@@ -2,7 +2,7 @@
 
 A macOS menu bar app and CLI that track where disk space goes, which app or tool is responsible, and what you can safely clean up. It includes hidden folders such as `~/.cache`, `node_modules`, and Playwright browsers.
 
-© 2026 Mo Hassan · [mohassan.net](https://mohassan.net)
+© 2026 Mo Hassan · [mohassan.net](https://mohassan.net) · [MIT License](LICENSE)
 
 Requires macOS 14 or later. Universal: Apple Silicon and Intel.
 
@@ -55,3 +55,7 @@ Builds are signed with a self-signed certificate, "Storage Keeper Local Signing"
 - **Attribution** (`Attributor`): macOS doesn't record which process wrote a file. Ownership comes from a table of known locations, bundle-ID folders, project folders, and the quarantine attribute on downloads.
 - **Live monitor** (`LiveMonitor`): FSEvents on `/`, per-file size tracking, alerts at 500 MB in 10 minutes or a single 1 GB file.
 - **Leftovers** (`Leftovers`): `~/Library` data folders whose app isn't installed or running and that haven't been touched for 30+ days, or 90+ days for folders named after an app rather than a bundle ID.
+
+## License
+
+MIT. See [LICENSE](LICENSE). © 2026 Mo Hassan · [mohassan.net](https://mohassan.net)
